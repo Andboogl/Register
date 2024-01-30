@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>887</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Register</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>891</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLineEdit" name="login">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background: #FFFFFF;
+	border-radius: 15px;
+	padding-left: 5px;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Login</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLineEdit" name="password">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+	background: #FFFFFF;
+	border-radius: 15px;
+	padding-left: 5px;
+}</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Password</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="sing_in">
+       <property name="text">
+        <string>Sing in</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="create_account">
+       <property name="text">
+        <string>Create account</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>887</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAuthorization">
+    <property name="title">
+     <string>Authorization</string>
+    </property>
+    <addaction name="sing_in_menubar"/>
+    <addaction name="create_account_menubar"/>
+   </widget>
+   <addaction name="menuAuthorization"/>
+  </widget>
+  <action name="sing_in_menubar">
+   <property name="text">
+    <string>Sing in</string>
+   </property>
+  </action>
+  <action name="create_account_menubar">
+   <property name="text">
+    <string>Create account</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
